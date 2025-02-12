@@ -1,0 +1,38 @@
+package com.devsuperior.dscommerce.entities;
+
+import java.time.LocalDate;
+
+public class User {
+
+	private Long id;
+	private String name;
+	private String emal;
+	private String phone;
+	private LocalDate birthDate;
+	private String passwoerd;
+	
+	
+	public User() {
+		super();
+	}
+
+
+	public User(Long id, String name, String emal, String phone, LocalDate birthDate, String passwoerd) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.emal = emal;
+		this.phone = phone;
+		this.birthDate = birthDate;
+		this.passwoerd = passwoerd;
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+ 

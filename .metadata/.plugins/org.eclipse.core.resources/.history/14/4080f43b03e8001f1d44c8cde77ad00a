@@ -1,0 +1,2 @@
+spring.application.name=dscommerce
+security.basic.enabled=false
