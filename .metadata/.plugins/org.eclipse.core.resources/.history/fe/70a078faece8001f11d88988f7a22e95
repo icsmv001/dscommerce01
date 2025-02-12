@@ -11,9 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-
-// entidade do sistema dscommerce
-
 @Entity 
 @Table(name="tb_user")
 
