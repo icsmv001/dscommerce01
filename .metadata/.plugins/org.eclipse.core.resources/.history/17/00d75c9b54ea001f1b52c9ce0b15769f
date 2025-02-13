@@ -1,0 +1,36 @@
+package com.devsuperior.dscommerce.entities;
+
+public class OrderItem {
+
+	
+	//para referenciar a classe auxiliar, estanciar manualmente.
+	private OrderItemPK id = new OrderItemPK() ;
+	
+	private Integer quantity;
+	private Double price;
+	
+	
+	public OrderItem() {
+		
+	}
+
+
+	public OrderItem(Order order, Product product, Integer quantity, Double price) {
+		
+		id.setOrder(order);
+		id.setProduct(product);
+		this.quantity = quantity;
+		this.price = price;
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+}

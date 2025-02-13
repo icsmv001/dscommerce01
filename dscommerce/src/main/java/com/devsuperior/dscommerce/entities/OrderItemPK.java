@@ -1,30 +1,35 @@
 package com.devsuperior.dscommerce.entities;
 
+import java.io.Serializable;
+
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-@Embeddable
-public class OrderItemPK {
-	
-	 private static final long serialVersionUID = 1L;
-	//dois atributos Order e Product, mapeados com chave estrangeira order_id e product_it, representando as chaves estrangeiras
-	@ManyToOne
-	@JoinColumn(name= "order_id")
-	private Order order;
-	
-	@ManyToOne
-	@JoinColumn(name= "product_id")
-	private Product product;
 
-		
+@Embeddable
+public class OrderItemPK  implements Serializable {
+
+	@ManyToOne
+	@JoinColumn(name="order_id")
+	private Order order;
+
+	
+	@ManyToOne
+	@JoinColumn(name="product_id")
+	private Product product;
+	
+	
 	public OrderItemPK() {
+		
 	}
 
 
 	public Order getOrder() {
 		return order;
 	}
+
+
 	public void setOrder(Order order) {
 		this.order = order;
 	}
@@ -40,6 +45,9 @@ public class OrderItemPK {
 	}
 	
 	
-		
+	
+	
+	
+	
 	
 }
