@@ -104,7 +104,6 @@ public class User {
 		return passwoerd;
 	}
 
-	
 
 	public void setPasswoerd(String passwoerd) {
 		this.passwoerd = passwoerd;
