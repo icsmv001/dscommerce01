@@ -1,7 +1,9 @@
 package com.devsuperior.dscommerce.entities;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -111,6 +113,19 @@ public class Product {
 	public Set<Category> getCategories() {
 		return categories;
 	}
+
+
+	public Set<OrderItem> getItems() {
+		return items;
+	}
+
+    
+	public List<Order> getOrders(){
+    //COM ERRO - return items.stream().map(x -> x.getOrder()).toList();
+	return items.stream().map(x-> x.getOrder()).collect(Collectors.toList());
+		
+	}
+ 
 
 
 	

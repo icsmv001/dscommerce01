@@ -84,7 +84,6 @@ INDEX VERSION 1.131+D:\workspaces\ws-devsuperior_2025A\.metadata\.plugins\org.ec
 1166567983.index
 113544824.index
 2677112643.index
-3604383621.index
 3961202579.index
 4257421430.index
 1540600955.index

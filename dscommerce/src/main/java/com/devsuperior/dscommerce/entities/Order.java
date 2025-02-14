@@ -2,7 +2,9 @@ package com.devsuperior.dscommerce.entities;
 
 import java.time.Instant;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -134,16 +136,15 @@ public class Order {
 
 
 
-	/*
-	 * public Set<OrderItem> getItems() { return items; }
-	 * 
-	 * 
-	 * 
-	 * 
-	 * public void setItems(Set<OrderItem> items) { this.items = items; }
-	 * 
-	 */
- 
+	public Set<OrderItem> getItems(){
+		return items;
+		
+	}
+	  
+	public List<Product> getProducts() {
+		return items.stream().map(x-> x.getProduct()).collect(Collectors.toList());
+				
+	}
  
 	 
 	 
