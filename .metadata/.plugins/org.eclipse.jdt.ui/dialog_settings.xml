@@ -14,7 +14,7 @@
 		<item key="height" value="400"/>
 	</section>
 	<section name="completion_proposal_size">
-		<item key="size.x" value="389"/>
+		<item key="size.x" value="666"/>
 		<item key="size.y" value="247"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">

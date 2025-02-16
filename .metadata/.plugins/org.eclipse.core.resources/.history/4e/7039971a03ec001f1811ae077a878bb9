@@ -104,14 +104,14 @@ public class User {
 	}
 
 
-	public String getPassword() {
-		return password;
+	public String getPasswoerd() {
+		return passwoerd;
 	}
 
 	
 
-	public void setPasswoerd(String password) {
-		this.password = password;
+	public void setPasswoerd(String passwoerd) {
+		this.passwoerd = passwoerd;
 	}
 
 

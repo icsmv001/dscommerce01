@@ -30,7 +30,7 @@ public class User {
 	private String email;
 	private String phone;
 	private LocalDate birthDate;
-	private String password;
+	private String passwoerd;
 	
 	
 	@OneToMany (mappedBy="client")
@@ -43,14 +43,14 @@ public class User {
 	}
 
 
-	public User(Long id, String name, String email, String phone, LocalDate birthDate, String password) {
+	public User(Long id, String name, String email, String phone, LocalDate birthDate, String passwoerd) {
 		
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
 		this.birthDate = birthDate;
-		this.password = password;
+		this.passwoerd = passwoerd;
 	}
 
 
@@ -104,14 +104,14 @@ public class User {
 	}
 
 
-	public String getPassword() {
-		return password;
+	public String getPasswoerd() {
+		return passwoerd;
 	}
 
 	
 
-	public void setPasswoerd(String password) {
-		this.password = password;
+	public void setPasswoerd(String passwoerd) {
+		this.passwoerd = passwoerd;
 	}
 
 

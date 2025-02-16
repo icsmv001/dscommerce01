@@ -1,4 +1,4 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.devsuperior.entities.Employee"><rhs name\="com.devsuperior.entities.Employee"/></lhs><lhs name\="com.devsuperior.order.entities.Order"><rhs name\="com.devsuperior.order.entities.Order"/></lhs><lhs name\="java.lang.Enum"><rhs name\="javax.persistence.GenerationType"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.devsuperior.entities.Employee"><rhs name\="com.devsuperior.entities.Employee"/></lhs><lhs name\="com.devsuperior.order.entities.Order"><rhs name\="com.devsuperior.order.entities.Order"/></lhs><lhs name\="java.lang.Enum"><rhs name\="javax.persistence.GenerationType"/><rhs name\="javax.persistence.CascadeType"/></lhs><lhs name\="com.devsuperior.dscommerce.entities.OrderItemPK"><rhs name\="com.devsuperior.dscommerce.entities.OrderItemPK"/></lhs></history>
 content_assist_number_of_computers=24
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
