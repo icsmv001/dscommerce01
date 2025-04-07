@@ -29,7 +29,12 @@ public class DscommerceApplication  implements CommandLineRunner {
 		
 		System.out.println("------------------------------------");
 		System.out.println("Projeto DSCommerce - ICSMV001.");
-		System.out.println("------------------------------------");		
+		System.out.println("------------------------------------");	
+		System.out.println("Desafio Modelo de dominio e ORM");
+		System.out.println("------------------------------------");	
+		
+		
+		
 		// ** fim bloco - DESAFIO Componentes e injecao de dependencias (icsmv001 - izael.)		
 			
 	}

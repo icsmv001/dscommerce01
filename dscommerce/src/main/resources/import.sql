@@ -29,6 +29,7 @@ INSERT INTO tb_product (name, price, description, img_url) VALUES ('PC Gamer Boo
 INSERT INTO tb_product (name, price, description, img_url) VALUES ('PC Gamer Foo', 4170.0, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/25-big.jpg');
 
 INSERT INTO tb_product_category (product_id, category_id) VALUES (1, 1);
+
 INSERT INTO tb_product_category (product_id, category_id) VALUES (2, 2);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (2, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (3, 3);
@@ -70,6 +71,31 @@ INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (3, 1, 
 INSERT INTO tb_payment (order_id, moment) VALUES (1, TIMESTAMP WITH TIME ZONE '2022-07-25T15:00:00Z');
 INSERT INTO tb_payment (order_id, moment) VALUES (2, TIMESTAMP WITH TIME ZONE '2022-07-30T11:00:00Z');
 
+---// INICIO DE BLOCO POPULANDO TABELAS DO DESAFIO DE MODELO DE DOMINIO E ORM - 
+---// codigo spring em : D:\workspaces\ws-devsuperior_2025A\dscommerce\src\main\java\com\devsuperior\dscommerce\entities
+-- ENTIDADE PARTICIPANTE
+INSERT INTO tb_participante (nome, email) VALUES ('josé da Silva','jose@gmail.com');
+INSERT INTO tb_participante (nome, email) VALUES ('Tiago Faria','tiago@gmail.com');
+INSERT INTO tb_participante (nome, email) VALUES ('Maria do Rosário','maria@gmail.com');
+INSERT INTO tb_participante (nome, email) VALUES ('Tiago Faria','teresa@gmail.com');
+-- ENTIDADE CATEGORIA
+INSERT INTO tb_categoria (descricao) VALUES ('Curso');
+INSERT INTO tb_categoria (descricao) VALUES ('Oficina');
+-- ENTIDADE ATIVIDADE
+INSERT INTO  tb_atividade ( nome,descricao, preco,categoria_id) VALUES ('Curso de HTML', 'Aprenda HTML de forma prática',80.00 ,1);
+INSERT INTO  tb_atividade ( nome,descricao, preco,categoria_id) VALUES ('Oficina de Github', 'Controle versões de seus projetos',50.00 ,2);
+-- ENTIDADE BLOCO
+INSERT INTO  tb_bloco (inicio, fim,atividade_id) VALUES (TIMESTAMP WITH TIME ZONE '2017-09-25T08:00:00Z',TIMESTAMP WITH TIME ZONE '2017-09-25T11:00:00Z',1);
+INSERT INTO  tb_bloco (inicio, fim,atividade_id) VALUES (TIMESTAMP WITH TIME ZONE '2017-09-25T14:00:00Z',TIMESTAMP WITH TIME ZONE '2017-09-25T18:00:00Z',2);
+INSERT INTO  tb_bloco (inicio, fim,atividade_id) VALUES (TIMESTAMP WITH TIME ZONE '2017-09-26T08:08:00Z',TIMESTAMP WITH TIME ZONE '2017-09-26T11:00:00Z',2);
+-- ENTIDADE TB_ATIVIDADE_PARTICIPANTE
+INSERT INTO tb_atividade_participante (atividade_id, participante_id) VALUES (1, 1);
+INSERT INTO tb_atividade_participante (atividade_id, participante_id) VALUES (1, 2);
+INSERT INTO tb_atividade_participante (atividade_id, participante_id) VALUES (1, 3);
+INSERT INTO tb_atividade_participante (atividade_id, participante_id) VALUES (2, 3);
+INSERT INTO tb_atividade_participante (atividade_id, participante_id) VALUES (2, 4);
+---// TERMINO DE BLOCO POPULANDO TABELAS DO DESAFIO DE MODELO DE DOMINIO E ORM - 
+--------------------------------------------------------------------------------------------------
 
 
 
